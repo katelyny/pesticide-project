@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>data viz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=K2D:300|Quicksand:400" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+
+        
+<!--main section -->
+        <div id="big-ass-section">
+             <div id="main">                
+                <div id="main-title">
+                    <h1 id="river" class="hidden">RED DEER RIVER</h1>
+                    <div class="svg-mainContainer">
+                    <img src="svg/2,4-D.svg">
+                    <p>2,4-D</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/DCIM.svg">
+                    <p>DCIM</p>
+                    </div>
+<!--
+                    <div class="svg-mainContainer">
+                    <img src="jeff.jpg" height="100" >
+                    <p>JEFF</p>
+                    </div>
+-->
+                    <div class="svg-mainContainer">
+                    <img src="svg/MCPP.svg">
+                    <p>MCPP</p>                            
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/MCPA.svg">
+                    <p>MCPA</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/FLUR.svg">
+                    <p>FLUR</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/CLOP.svg">
+                    <p>CLOP</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/BENT.svg">
+                    <p>BENT</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/PICL.svg">
+                    <p>PICL</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/DCPR.svg">
+                    <p>DCPR</p>
+                    </div>
+                    <div class="svg-mainContainer">
+                    <img src="svg/TRIC.svg">
+                    <p>TRIC</p>
+                    </div>
+                </div>
+                <div id="main-text" class="hidden">
+                    <p>discover what's in the water</p>
+                    <img src="svg/arrow.svg" id="arrow">
+                </div>
+            </div>
+            
+            
+            <div id="spacer"></div>
+<!--
+#5080a0
+#467899
+#3c6587
+#33587c
+#223556
+#182442
+#102433
+-->
+            
+            <div id="scroll" class="wrapper">
+
+        <!--pesticide list-->
+
+                <div id="section0" class="backgroundCol" data-background-color="#5080a0">
+                    <div id="pest-trigger"></div>
+                    <div class="slide-fade" >
+                        <ul id="pesticide-list" >
+                            <h3>pesticides detected:</h3>
+                            <li class="hidden" id="list-DICH">2,4-D 
+                                <div class="li-svg-container">
+                                    <img src="svg/2,4-D.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-DCIM">DCIM   
+                                <div class="li-svg-container">
+                                    <img src="svg/DCIM.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-MCPP">MCPP
+                                <div class="li-svg-container">
+                                    <img src="svg/MCPP.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-MCPA">MCPA
+                                <div class="li-svg-container">
+                                    <img src="svg/MCPA.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-FLUR">FLUR
+                                <div class="li-svg-container">
+                                    <img src="svg/FLUR.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-CLOP">CLOP
+                                <div class="li-svg-container">
+                                    <img src="svg/CLOP.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-BENT">BENT
+                                <div class="li-svg-container">
+                                    <img src="svg/BENT.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-PICL">PICL
+                                <div class="li-svg-container">
+                                    <img src="svg/PICL.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-DCPR">DCPR
+                                <div class="li-svg-container">
+                                    <img src="svg/DCPR.svg">
+                                </div>
+                            </li>
+                            <li class="hidden" id="list-TRIC">TRIC
+                                <div class="li-svg-container">
+                                    <img src="svg/TRIC.svg">
+                                </div>    
+                            </li>
+                        </ul>
+                    </div>
+<!--        progressbar-->
+                    <div id="progress-bar">
+                        <label id="progress"></label>
+                    </div>
+                    <div id= "progress-trigger"></div>
+                </div>
+                                
+                <div id="spacer1" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                <section id="section1" class="backgroundCol" data-background-color="#33587c">
+                    <div id="trigger"></div>
+                    <div id="loc1" class="pest-site">
+                        <div class="location-current" id="loc1-title">
+                            <h2 >MEDICINE RIVER AT HWY 54</h2>
+                            <p>tributary</p>
+                        </div>
+                        <img src="svg/FLUR.svg" class="svg" id="FLUR">
+                        <img src="svg/CLOP.svg" class="svg" id="CLOP">
+                        <img src="svg/BENT.svg" class="svg" id="BENT">
+                    </div>
+                </section>
+                
+                <div id="spacer2" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                <section id="section2" class="backgroundCol" data-background-color="#182442">
+                    <div id="trigger2"></div>
+
+                    <div id="loc2" class="pest-site">
+                        <div class="location-current" id="loc2-title">
+                            <h2>RED DEER WWTP</h2>
+                            <p>effluent</p>
+                        </div>
+                        <img src="svg/2,4-D.svg" class="svg" id="DICH2">
+                        <img src="svg/MCPP.svg" class="svg" id="MCPP2">
+                        <img src="svg/MCPA.svg" class="svg" id="MCPA2">
+                        <img src="svg/PICL.svg" class="svg" id="PICL2">
+                        <img src="svg/DCPR.svg" class="svg" id="DCPR2">
+                    </div>
+                </section>
+                
+                <div id="spacer3" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                <section id="section3" class="backgroundCol" data-background-color="#3c6587">
+                    <div id="trigger3"></div>
+                    <div id="loc3" class="pest-site">
+                        <div class="location-current" id="loc3-title">
+                            <h2>JOFFRE BRIDGE</h2>
+                            <p>mainstem</p>
+                        </div>
+                        <img src="svg/2,4-D.svg" class="svg" id="DICH3">
+                        <img src="svg/BENT.svg" class="svg" id="BENT3">
+                    </div>
+                </section>
+
+                <div id="spacer4" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                <section id="section4" class="backgroundCol" data-background-color="#223556">
+                    <div id="trigger4"></div>
+                    <div id="loc4" class="pest-site">
+                        <div class="location-current" id="loc4-title">
+                            <h2>ME GLOBAL PRENTISS</h2>
+                            <p>effluent</p>
+                        </div>
+                        <img src="svg/2,4-D.svg" class="svg" id="DICH4">
+                        <img src="svg/MCPA.svg" class="svg" id="MCPA4">
+                        <img src="svg/PICL.svg" class="svg" id="PICL4">
+                        <img src="svg/TRIC.svg" class="svg" id="TRIC4">
+                    </div>
+                </section>
+
+                <div id="spacer5" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                
+                <section id="section5" class="backgroundCol" data-background-color="#33587c">
+                    <div id="trigger5"></div>
+                    <div id="loc5" class="pest-site">
+                        <div class="location-current" id="loc5-title">
+                            <h2>NOVA CHEMICALS, JOFFRE</h2>
+                            <p>effluent</p>
+                        </div>
+                        <img src="svg/2,4-D.svg" class="svg" id="DICH5">
+                        <img src="svg/DCIM.svg" class="svg" id="DCIM5">
+                        <img src="svg/FLUR.svg" class="svg" id="FLUR5">
+                    </div>
+                </section>
+                
+                <div id="spacer6" class="backgroundCol" data-background-color="#5080a0"></div>
+
+
+                <section id="section6" class="backgroundCol" data-background-color="#467899">
+                    <div id="trigger6"></div>
+                    <div id="loc6" class="pest-site">
+                       <div class="location-current" id="loc6-title">
+                            <h2>THREEHILLS CREEK</h2>
+                            <p>tributary</p>
+                        </div>
+                        <img src="svg/BENT.svg" class="svg" id="BENT6">
+                    </div>
+                </section>
+                
+                <div id="spacer7" class="backgroundCol" data-background-color="#5080a0"></div>
+
+                <section id="section7" class="backgroundCol" data-background-color="#223556">
+                    <div id="trigger7"></div>
+                    <div id="loc7" class="pest-site">
+                        <div class="location-current" id="loc7-title">
+                            <h2>DRUMHELLER WWTP</h2>
+                            <p>effluent</p>
+                        </div>
+                        <img src="svg/2,4-D.svg" class="svg" id="DICH7">
+                        <img src="svg/DCIM.svg" class="svg" id="DCIM7">
+                        <img src="svg/MCPP.svg" class="svg" id="MCPP7">
+                        <img src="svg/CLOP.svg" class="svg" id="CLOP7">
+
+                        
+                    </div>
+                </section>
+                
+                <div id="spacer8" class="backgroundCol" data-background-color="#5080a0"></div>
+            
+            </div>
+    
+            
+        </div>
+<!-- jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--scrollie-->
+    <script src="js/in-view.min.js"></script>
+<!-- tweenmax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<!--timelinemax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+<!-- scrollmagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<!--animation gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<!--add indicators-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/main.js"></script>
+            
+    </body>
+</html>

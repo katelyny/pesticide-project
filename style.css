@@ -1,0 +1,187 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #5080a0;
+    overflow-x: hidden;
+    min-width: 1080px;
+}
+
+/*fonts*/
+h1, h2, h3, p, li {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+h1{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3, p{
+    font-size: 1.3em;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+label, code {
+    font-family: 'K2D', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+
+div#big-ass-section {    
+/*    height: 8000px; */
+}
+
+/*main section*/
+div#main {
+    height: 100vh;
+    display: grid;
+    align-content: center; 
+    text-align: center;
+}
+div#main-title{
+    padding:8vh 0;
+}
+div#main-text{
+    padding:5vh 0;
+}
+#arrow{
+    width: 80px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+div#spacer {
+    height: 50vh;
+}
+
+/*scroll section*/
+
+div#scroll{
+    background-image: url(svg/ruler.svg);
+    transition: background 1.5s ease;
+}
+
+div#section0 {
+    height: 50vh;
+}
+
+div.pest-site{
+    height:150vh;
+}
+
+div#spacer1{
+    height: 184000px;
+}
+div#spacer2{
+    height: 210000px;
+}
+div#spacer3{
+    height: 10000px;
+}
+div#spacer4{
+    height: 26000px;
+}
+div#spacer5{
+    height: 6000px;
+}
+div#spacer6{
+    height: 264000px;
+}
+div#spacer7{
+    height: 70000px;
+}
+div#spacer8{
+    height: 630000px;
+}
+
+/*location*/
+div.location-current{
+    margin: 40px;
+    text-align: left;
+    padding: 15px;
+}
+
+/*progress bar*/
+div#progress-bar { 
+    text-align: right;
+    min-width: 200px;
+    margin: 200px;
+}
+
+/*pesticide list*/
+ul#pesticide-list{
+    min-width: 190px;
+    border: 3px white solid;
+    border-radius: 3px;
+    margin:auto;
+    padding: 15px;
+    position: absolute;
+    right: 200px;
+}
+
+ul > li {
+    list-style: none; 
+    height:0;
+    line-height: 1.5em;
+    margin:0; 
+    overflow: hidden;
+    border-bottom: 1.5px white dotted;
+}
+
+
+.li-svg-container{
+    display: inline-block;
+    width: 40px;
+    position: absolute;
+    right:8px;
+    margin-top:-2px; 
+}
+
+
+li.show {
+  height: 1.6em;
+  margin: 2px 0;
+}
+
+.slide-fade li{
+    transition: all 0.4s ease-out;
+    opacity:0;
+}
+
+.slide-fade li.show {
+    opacity:1;
+}
+
+.hidden{
+    opacity:0;
+}
+
+/*svg*/
+.svg-mainContainer{
+    width:110px;
+    display: inline-block;
+    margin-right:15px;
+    opacity: 0;
+}
+
+.svg{
+    width: 100px;
+    position: absolute;
+    left: -100px;
+}
+
+
